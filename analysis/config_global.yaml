@@ -5,11 +5,20 @@ gslab_version: 4.1.1
 build:
   prepare_data: build/prepare_data
   descriptive: build/descriptive
+  multivar_draw: build/multivar_draw
+  multivar_plot: build/multivar_plot
 
 # Source Directories
 source:
   prepare_data: source/prepare_data
   descriptive: source/descriptive
+  multivar_draw: source/multivar_draw
+  multivar_plot: source/multivar_plot
+
+#Release Directories
+release:
+  multivar_draw: release/multivar_draw
+  multivar_plot: release/multivar_plot
 
 # Input Directories (will record contents)
 input: None

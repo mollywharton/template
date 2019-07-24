@@ -8,22 +8,36 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit c2de9459af2d00c124ed3e834ba5d41b1cf762a0
-Author: AakaashRao <aakaash@uchicago.edu>
-Date:   Fri Jan 18 11:05:05 2019 -0600
+commit f50e296b712e131ca20c3f0ba401daa0b75f5515
+Author: Molly Wharton <mollywharton@siepr-mg-ra-imac-5.stanford.edu>
+Date:   Tue Jul 23 12:05:40 2019 -0700
 
-    Revert "initial commit". I mistakenly committed to the template in this repo rather than to my forked version.
-    
-    This reverts commit d5e73ab4c8cd863a32e910e91224e7669031013d.
+    make plot with r
 
 
 Files changed since last commit:
 
 
+.gitattributes
 analysis/SConstruct
+analysis/config_global.yaml
 analysis/release/descriptive/plot.eps
 analysis/release/descriptive/sconscript_descriptive.log
-analysis/source/prepare_data/SConscript
+analysis/release/descriptive/table.txt
+analysis/release/sconstruct.log
+analysis/release/state_of_repo.log
+paper_slides/input/plot.eps
+paper_slides/input/table.txt
+paper_slides/release/paper/ondeck.pdf
+paper_slides/release/paper/online_appendix.pdf
+paper_slides/release/paper/paper.pdf
+paper_slides/release/paper/sconscript.log
+paper_slides/release/paper/text.pdf
+paper_slides/release/sconstruct.log
+paper_slides/release/state_of_input.log
+paper_slides/release/state_of_repo.log
+paper_slides/release/talk/sconscript.log
+paper_slides/release/talk/slides.pdf
 
 ===================================
 
@@ -31,62 +45,92 @@ analysis/source/prepare_data/SConscript
 
 ===================================
 ./config_global.yaml:
-   modified on: 23 Jul 2019 11:59:47
-   size of file: 1264
+   modified on: 24 Jul 2019 08:53:27
+   size of file: 1523
 ./config_user.yaml:
    modified on: 23 Jul 2019 12:02:37
    size of file: 646
+./Rplots.pdf:
+   modified on: 24 Jul 2019 09:07:18
+   size of file: 63702
 ./run.py:
    modified on: 23 Jul 2019 11:59:47
    size of file: 449
 ./SConstruct:
-   modified on: 23 Jul 2019 12:02:04
-   size of file: 1874
+   modified on: 23 Jul 2019 15:01:03
+   size of file: 1966
 ./sconstruct.log:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 496
+   modified on: 24 Jul 2019 09:07:18
+   size of file: 1293
 ./state_of_repo.log:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 739
+   modified on: 24 Jul 2019 09:07:18
+   size of file: 1160
 ./build/descriptive/plot.eps:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 12351
+   modified on: 23 Jul 2019 13:08:34
+   size of file: 11716
 ./build/descriptive/sconscript_descriptive.log:
-   modified on: 23 Jul 2019 12:02:40
+   modified on: 23 Jul 2019 13:08:34
    size of file: 96
 ./build/descriptive/table.txt:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 39
+   modified on: 23 Jul 2019 13:08:34
+   size of file: 60
+./build/multivar_draw/multivar_draw.csv:
+   modified on: 24 Jul 2019 09:07:17
+   size of file: 41562
+./build/multivar_draw/sconscript_multivar_draw.log:
+   modified on: 24 Jul 2019 09:07:17
+   size of file: 258
+./build/multivar_plot/sconscript_multivar_plot.log:
+   modified on: 24 Jul 2019 09:07:18
+   size of file: 184
 ./build/prepare_data/data.txt:
-   modified on: 23 Jul 2019 12:02:38
-   size of file: 1988897
+   modified on: 23 Jul 2019 21:40:19
+   size of file: 3453388
 ./build/prepare_data/sconscript_create_data.log:
    modified on: 23 Jul 2019 12:02:38
    size of file: 255
 ./release/sconstruct.log:
-   modified on: 23 Jul 2019 11:59:47
-   size of file: 306
+   modified on: 24 Jul 2019 08:41:58
+   size of file: 667
 ./release/state_of_repo.log:
-   modified on: 23 Jul 2019 11:59:47
-   size of file: 2874
+   modified on: 24 Jul 2019 08:41:58
+   size of file: 4572
 ./release/descriptive/plot.eps:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 12351
+   modified on: 23 Jul 2019 13:08:34
+   size of file: 11716
 ./release/descriptive/sconscript_descriptive.log:
-   modified on: 23 Jul 2019 12:02:40
+   modified on: 23 Jul 2019 13:08:34
    size of file: 96
 ./release/descriptive/table.txt:
-   modified on: 23 Jul 2019 12:02:40
-   size of file: 39
+   modified on: 23 Jul 2019 13:08:34
+   size of file: 60
 ./release/lg/data.txt:
-   modified on: 23 Jul 2019 12:02:38
-   size of file: 1988897
+   modified on: 23 Jul 2019 13:06:54
+   size of file: 3453388
+./release/multivar_draw/multivar_draw.csv:
+   modified on: 24 Jul 2019 09:07:17
+   size of file: 41562
+./release/multivar_plot/multivar_plot.jpeg:
+   modified on: 24 Jul 2019 09:07:18
+   size of file: 365984
 ./source/descriptive/descriptive.py:
    modified on: 23 Jul 2019 11:59:47
    size of file: 548
 ./source/descriptive/SConscript:
-   modified on: 23 Jul 2019 11:59:47
+   modified on: 23 Jul 2019 13:05:38
    size of file: 501
+./source/multivar_draw/multivar_draw.r:
+   modified on: 24 Jul 2019 08:57:15
+   size of file: 557
+./source/multivar_draw/SConscript:
+   modified on: 24 Jul 2019 08:55:19
+   size of file: 357
+./source/multivar_plot/multivar_plot.r:
+   modified on: 24 Jul 2019 08:55:09
+   size of file: 458
+./source/multivar_plot/SConscript:
+   modified on: 24 Jul 2019 08:55:10
+   size of file: 358
 ./source/prepare_data/create_data.do:
    modified on: 23 Jul 2019 11:59:47
    size of file: 262
@@ -97,11 +141,14 @@ analysis/source/prepare_data/SConscript
    modified on: 23 Jul 2019 11:59:47
    size of file: 260
 ./source/prepare_data/create_data.r:
-   modified on: 23 Jul 2019 11:59:47
+   modified on: 23 Jul 2019 14:22:09
    size of file: 249
 ./source/prepare_data/create_data.sh:
    modified on: 23 Jul 2019 11:59:47
    size of file: 81
 ./source/prepare_data/SConscript:
-   modified on: 23 Jul 2019 12:02:29
+   modified on: 23 Jul 2019 14:20:24
    size of file: 1125
+./source/raw_data/data.txt:
+   modified on: 23 Jul 2019 12:25:29
+   size of file: 3453388

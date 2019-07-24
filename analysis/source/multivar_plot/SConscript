@@ -1,0 +1,11 @@
+Import('env')
+import gslab_scons as gs
+
+build  = env['CONFIG']['global']['build']['multivar_plot']
+source = env['CONFIG']['global']['source']['multivar_plot']
+
+env.BuildR(target  = ['#%s/multivar_plot.jpeg'      % build],
+            source  = ['#%s/multivar_plot.r' % source],
+            log_ext =  'multivar_plot')
+
+env.Install('#release', '#%s/' % build)

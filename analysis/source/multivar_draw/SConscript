@@ -1,0 +1,11 @@
+Import('env')
+import gslab_scons as gs
+
+build  = env['CONFIG']['global']['build']['multivar_draw']
+source = env['CONFIG']['global']['source']['multivar_draw']
+
+env.BuildR(target  = ['#%s/multivar_draw.csv'      % build],
+            source  = ['#%s/multivar_draw.r' % source],
+            log_ext =  'multivar_draw')
+
+env.Install('#release', '#%s/' % build)
